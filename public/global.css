@@ -1,0 +1,144 @@
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(51, 51, 51);
+  font-family: "Varela Round", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+button:focus {
+  outline: none;
+}
+
+.colors {
+  display: flex;
+  height: 80vh;
+}
+.color {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+.color h2 {
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+.sliders {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  padding: 2rem 1rem 3rem;
+  pointer-events: none;
+  position: absolute;
+  width: 80%;
+
+  transform: translateY(100px);
+  transition: all 0.25s ease-in-out;
+}
+.sliders.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+.sliders button {
+  background-color: transparent;
+  border: none;
+  color: #746868;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  position: absolute;
+  top: -5px;
+  right: 0;
+  padding: 0.65rem;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  position: relative;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  align-items: center;
+  display: flex;
+  height: 20vh;
+  justify-content: space-evenly;
+}
+.panel button {
+
+}
+.panel p {
+  font-size: 1.2rem;
+}
+
+.library-panel,
+.generate-panel,
+.save-panel {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+}
+.color .icon-button {
+  margin: 2rem 0;
+}
+.icon {
+  width: 40px;
+  height: auto;
+}
+.panel .icon {
+  width: 20px;
+  height: auto;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+}
+.color .icon-button {
+  margin: 2rem 0;
+}
+.icon {
+  width: 40px;
+  height: auto;
+}
+.panel .icon {
+  width: 20px;
+  height: auto;
+}
